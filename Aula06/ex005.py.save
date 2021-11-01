@@ -1,0 +1,14 @@
+"""Utilizando o while faça um programa que imprima a
+pontuação obtida por determinado aluno em uma prova
+de 3 questões, dado que cada questão vale 1 ponto.
+
+Q1 - letra 'b'
+Q2 - letra 'a'
+Q3 - letra 'd'
+"""
+
+soma = 0
+
+alternativas = ['a', 'b', 'c', 'd', 'e']
+
+
