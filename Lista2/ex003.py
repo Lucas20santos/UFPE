@@ -1,5 +1,4 @@
-"""
-Escreva um programa que solicite ao usuário 10 valores (1 até 10) e guarde-os em uma
+"""Escreva um programa que solicite ao usuário 10 valores (1 até 10) e guarde-os em uma
 tupla. O programa deverá realizar uma análise dos valores inseridos e exibir:
 a. Quantas vezes o número 5 foi digitado;
 b. Qual a posição do número 3;
