@@ -56,3 +56,4 @@ print(f"O cidadao fulano é {situacaoSuspeito}")
 
 # https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/
 # https://medium.com/rafaeltardivo/python-entendendo-o-uso-de-args-e-kwargs-em-fun%C3%A7%C3%B5es-e-m%C3%A9todos-c8c2810e9dc8
+# https://github.com/Lucas20santos/UFPE
