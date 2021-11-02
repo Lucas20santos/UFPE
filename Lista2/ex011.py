@@ -1,0 +1,1 @@
+"""Escreva as características das variáveis compostas estudadas."""
