@@ -10,7 +10,6 @@ no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classif
 como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso
 contrário, ele será classificado como "Inocente"."""
 from os import system as linux
-from time import sleep as tempo
 linux("clear")
 
 def respostaPergunta(opcao):

@@ -4,7 +4,6 @@ uma dada lista. A lista dos números primos deverá ser originada, através de u
 formada por números inteiros de 1 até 200. A ideia é deixar que o usuário defina o
 número X (quantidade de números primos).
 """
-from os import error
 from packages.organizar import limpar, criarLinha
 from packages.lista import exibir, criaLista
 
@@ -27,18 +26,23 @@ while True:
     else:
         break
 print("valor de x = ",x)
-listaNumPrimo = [0, 1]
+listaNumPrimo = []
 cont = 0
+i = 0
 
-for i in range(0, x + 1):
-    for j in range(i):
-        if j == 0 or i == 0:
-            continue
+print("ok - fora")
+while len(listaNumPrimo) < x:
+    print("ok")
+    if i == 0 or i == 1:
+        continue
+    for j in range(1, i + 1):
         if i % j == 0:
             cont += 1
     if cont == 2:
         listaNumPrimo.append(i)
     cont = 0
+    i += 1
+    print("ok")
 
 exibir(f"Lista números primos até {x} ", listaNumPrimo)
 criarLinha()
