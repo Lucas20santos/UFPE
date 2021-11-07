@@ -28,21 +28,17 @@ while True:
 print("valor de x = ",x)
 listaNumPrimo = []
 cont = 0
-i = 0
 
-print("ok - fora")
 while len(listaNumPrimo) < x:
-    print("ok")
-    if i == 0 or i == 1:
-        continue
-    for j in range(1, i + 1):
-        if i % j == 0:
-            cont += 1
-    if cont == 2:
-        listaNumPrimo.append(i)
-    cont = 0
-    i += 1
-    print("ok")
+    for i in lista:
+        if i == 0 or i == 1:
+            continue
+        for j in range(1, i + 1):
+            if i % j == 0:
+                cont += 1
+        if cont == 2:
+            listaNumPrimo.append(i)
+        cont = 0
 
-exibir(f"Lista números primos até {x} ", listaNumPrimo)
+exibir(f"Lista números primos até ", listaNumPrimo[:x])
 criarLinha()
