@@ -1,15 +1,25 @@
 import smtplib
 import email.message
 
+def senha():
+    arquivo = open("arquivoConfiguracao/senha.txt","r")
+    return arquivo.readlines()
+
+def emails():
+    arquivo = open("arquivoConfiguracao/email.txt", "r")
+    return arquivo.readlines()
+
 def enviar_email():
+    arq = senha()
+
     corpo_email = """
         Segundo email de teste com python smtplib
     """
     msg = email.message.Message()
-    msg['Subject'] = "Email Automatico"
+    msg['Subject'] = "Elevada Temperatura"
     msg['From'] = "pythontestarcodigos@gmail.com"
-    msg['To'] = "lucas210souza@gmail.com"
-    password = "Qwertyuiop201302"
+    msg['To'] = arq[0].strip()
+    password = arq[1].strip()
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email)
 
@@ -20,5 +30,5 @@ def enviar_email():
     print("Email enviado!")
 
 
-enviar_email()
-
+email = emails()
+print(email[0])
