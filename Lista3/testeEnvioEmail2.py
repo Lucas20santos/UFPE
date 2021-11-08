@@ -30,5 +30,10 @@ def enviar_email():
     print("Email enviado!")
 
 
-email = emails()
-print(email[0])
+while True:
+
+    sensor = float(input("leitura: "))
+    if sensor >= 40:
+        enviar_email()
+
+
