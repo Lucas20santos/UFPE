@@ -1,6 +1,7 @@
 import smtplib
 import email.message
 
+
 def senha():
     arquivo = open("arquivoConfiguracao/senha.txt","r")
     return arquivo.readlines()
@@ -35,5 +36,3 @@ while True:
     sensor = float(input("leitura: "))
     if sensor >= 40:
         enviar_email()
-
-
